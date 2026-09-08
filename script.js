@@ -126,10 +126,10 @@ if (!reduceMotion && !("ontouchstart" in window)) {
 // While a link is empty, the button opens an email enquiry instead so the
 // page keeps working before payments are set up.
 const PAYMENT_LINKS = {
-  circle: "",   // e.g. "https://buy.stripe.com/xxxx"  The Circle, $49/mo
-  table: "",    // The Dinner Table, $1,200
-  private: "",  // One-on-One, $3,500
-  consulting: "", // 1:1 Consulting, $200/hr ($150 first session)
+  consult: "",    // e.g. "https://buy.stripe.com/xxxx"  First Consultation, $150
+  coaching: "",   // Coaching Package, 5 x $200 = $1,000
+  consulting: "", // Connect page "Book a Consultation" (same as consult)
+  business: "",   // leave empty: Business Consulting is quoted by email
 };
 document.querySelectorAll(".pay-btn").forEach((btn) => {
   const key = btn.dataset.package;
