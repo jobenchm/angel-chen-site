@@ -129,6 +129,7 @@ const PAYMENT_LINKS = {
   circle: "",   // e.g. "https://buy.stripe.com/xxxx"  The Circle, $49/mo
   table: "",    // The Dinner Table, $1,200
   private: "",  // One-on-One, $3,500
+  consulting: "", // 1:1 Consulting, $200/hr ($150 first session)
 };
 document.querySelectorAll(".pay-btn").forEach((btn) => {
   const key = btn.dataset.package;
