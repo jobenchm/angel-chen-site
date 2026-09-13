@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Learn with Angel — Mentorship Packages</title>
-<meta name="description" content="Work with Angel Chen one on one: a first consultation, ongoing life coaching, or international business consulting. In English and 中文.">
+<meta name="description" content="Work with Angel Wen one on one: a first consultation, ongoing life coaching, or international business consulting. In English and 中文.">
 <meta property="og:title" content="Learn with Angel — Mentorship Packages">
-<meta property="og:description" content="Private coaching and consulting with Angel Chen: first consultation $150, life coaching $200 an hour, business consulting quoted per case.">
+<meta property="og:description" content="Private coaching and consulting with Angel Wen: first consultation $150, life coaching $200 an hour, business consulting quoted per case.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sisterangel.com/learn.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
   <div class="nav-inner">
     <a href="index.html" class="brand">
       <span class="seal sm">安</span>
-      Angel Chen
+      Angel Wen
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
@@ -32,9 +32,16 @@
       <li><a href="connect.html">Connect</a></li>
       <li><a href="https://www.instagram.com/angelchenofficial/" class="nav-cta" target="_blank" rel="noopener">Follow on IG</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language / 切换语言">
+        <span class="knob" aria-hidden="true"></span>
+        <span class="opt" data-lang="en">EN</span>
+        <span class="opt" data-lang="zh">中文</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -106,7 +113,7 @@
 
     </div>
 
-    <p class="pricing-note fade-in">Prices in USD. Most people start with a first consultation. Not sure? <a href="mailto:hello@sisterangel.com?subject=Which%20package%20is%20right%20for%20me%3F">Ask Angel's team</a>.</p>
+    <p class="pricing-note fade-in" data-i18n="learn.note">Prices in USD. Most people start with a first consultation. Not sure? <a href="mailto:hello@sisterangel.com?subject=Which%20package%20is%20right%20for%20me%3F">Ask Angel's team</a>.</p>
   </div>
 </section>
 
@@ -187,10 +194,11 @@
 <footer>
   <div class="wrap">
     <span class="seal sm">安</span>
-    <div>© 2026 Angel Chen. sisterangel.com</div>
+    <div>© 2026 Angel Wen. sisterangel.com</div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

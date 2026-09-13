@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Connect — Angel Chen</title>
-<meta name="description" content="Follow Angel Chen's journey on Instagram, in English and 中文. No pressure, no link-in-bio energy.">
-<meta property="og:title" content="Connect — Angel Chen">
+<title>Connect — Angel Wen</title>
+<meta name="description" content="Follow Angel Wen's journey on Instagram, in English and 中文. No pressure, no link-in-bio energy.">
+<meta property="og:title" content="Connect — Angel Wen">
 <meta property="og:description" content="Follow along, one chapter at a time.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sisterangel.com/connect.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
   <div class="nav-inner">
     <a href="index.html" class="brand">
       <span class="seal sm">安</span>
-      Angel Chen
+      Angel Wen
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
@@ -32,9 +32,16 @@
       <li><a href="connect.html">Connect</a></li>
       <li><a href="https://www.instagram.com/angelchenofficial/" class="nav-cta" target="_blank" rel="noopener">Follow on IG</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language / 切换语言">
+        <span class="knob" aria-hidden="true"></span>
+        <span class="opt" data-lang="en">EN</span>
+        <span class="opt" data-lang="zh">中文</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </nav>
 
@@ -92,12 +99,12 @@
       <p>One code, straight to the site — good for a bio link, a story sticker, or a printed card.</p>
     </div>
     <div class="fade-in" style="display:flex;justify-content:center">
-      <a href="images/qr-code.png" download="angel-chen-qr.png" style="display:block;max-width:240px">
-        <img src="images/qr-code.png" alt="QR code linking to Angel Chen's website" style="width:100%;border-radius:16px;border:1px solid var(--line)">
+      <a href="images/qr-code.png" download="angel-wen-qr.png" style="display:block;max-width:240px">
+        <img src="images/qr-code.png" alt="QR code linking to Angel Wen's website" style="width:100%;border-radius:16px;border:1px solid var(--line)">
       </a>
     </div>
-    <p style="text-align:center;margin-top:14px;font-size:0.85rem;color:var(--ink-soft)">
-      <a href="images/qr-code.png" download="angel-chen-qr.png" style="text-decoration:underline">Download the image</a> to post on your new social channel.
+    <p data-i18n="connect.qr" style="text-align:center;margin-top:14px;font-size:0.85rem;color:var(--ink-soft)">
+      <a href="images/qr-code.png" download="angel-wen-qr.png" style="text-decoration:underline">Download the image</a> to post on your new social channel.
     </p>
   </div>
 </section>
@@ -105,10 +112,11 @@
 <footer>
   <div class="wrap">
     <span class="seal sm">安</span>
-    <div>© 2026 Angel Chen. sisterangel.com</div>
+    <div>© 2026 Angel Wen. sisterangel.com</div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
